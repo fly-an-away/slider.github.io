@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+        }
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    min-width: 320px;
+    position: relative;
+    display: block;
+}
+
+.section {
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 320px;
+    min-height: 1024px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.section a {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.section li {
+    margin-bottom: 32px;
+}
+
+.section-header {
+    min-width: 320px;
+    min-height: 134.01px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-header__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-header__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn__logo {
+    margin-left: 10px;
+}
+
+.main__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn__burger {
+    background-image: url(../img/svg/burger.svg);
+    cursor: pointer;
+}
+
+.btn__logo {
+    background-image: url(../img/svg/Logo.svg);
+    cursor: pointer;
+}
+
+.btn__search {
+    background-image: url(../img/svg/search.svg);
+    cursor: pointer;
+}
+
+.logo__btn {
+    width: 96.55px;
+    height: 50.81px;
+    background-color: #FFFFFF;
+    padding: 0px;
+    border: none;
+}
+
+.section-list {
+    list-style: none;
+    border-right: 1px solid #F2F2F2;
+    margin-left: 24px;
+}
+
+.section-list a {
+    font-size: 16px;
+    font-family: TT Lakes;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.section a:hover {
+    opacity: 0.5;
+    transition-duration: 2s;
+}
+
+.section-list li:first-child::before {
+    position: absolute;
+    content: url(../img/svg/highlight.svg);
+    top: 125px;
+    left: 0px;
+}
+
+.btn__call {
+    background-image: url(../img/svg/call.svg);
+}
+
+.btn__chat {
+    background-image: url(../img/svg/chat.svg);
+}
+
+.btn__profile {
+    background-image: url(../img/svg/profile.svg);
+}
+
+.section__bottom {
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+    position: absolute;
+    top: 78.52%;
+    /*display: inline-block;
+    position: absolute;
+    left: 3.12%;
+    top: 78.52%;
+    bottom: 17.58%;*/
+}
+
+.section__bottom li {
+    margin-left: 3.12%;
+}
+
+.mail {
+    display: inline-block;
+    position: absolute;
+    height: 24px;
+    left: 3.12%;
+    right: 83.07%;
+    top: calc(50% - 24px/2 + 360px);
+}
+
+.tel {
+    display: inline-block;
+    position: absolute;
+    min-width: 320px;
+    height: 32px;
+    left: 3.12%;
+    right: 71.35%;
+    top: calc(50% - 32px/2 + 400px);
+    font-weight: bold;
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+}
+
+.lang {
+    display: inline-block;
+    position: absolute;
+    min-width: 320px;
+    top: calc(50% - 24px/2 + 468px);
+}
+
+.lang_ru {
+    display: block;
+    position: absolute;
+    left: 3.12%;
+    width: 24px;
+    height: 24px;  
+    margin-right: 7px;
+}
+
+.lang_en {
+    display: block;
+    position: absolute;
+    left: 11.33%;
+    width: 24px;
+    height: 24px;  
+}
+
+.lang_ch {
+    display: block;
+    position: absolute;
+    left: 19.54%;
+    width: 24px;
+    height: 24px;  
+}
